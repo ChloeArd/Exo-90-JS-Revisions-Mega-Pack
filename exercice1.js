@@ -42,4 +42,57 @@ alert("La longueur de " + txt + " est de " + longueur);
 let str1 = "Bonjour", str2 = "le monde !";
 alert(str1 + " " + str2);
 
+let listeVoitures = ["Renault", "Volvo", "Citroen"];
+let maVoiture = listeVoitures[1]; //Volvo
+listeVoitures[0] = "Ford"; //Ford, Volvo, Citroen
 
+alert(listeVoitures.length); //3
+
+listeVoitures.pop(); //Ford, Volvo
+listeVoitures.push("Ferrari") //Ford, Volvo, Ferrari
+
+let rNumber = Math.floor(Math.random() * 100);
+let fNumber = 35.28;
+console.log(Math.round(fNumber)); //35
+
+let nombreUn = 10, nombreDeux = 5;
+if (nombreUn > nombreDeux) {
+    alert("NombreUn est supérieur à nombreDeux");
+}
+
+let nombreTrois = 10, nombreQuatre = 10;
+if (nombreTrois === nombreQuatre){
+    alert("NombreTrois est égal à nombreQuatre");
+}
+
+if (nombreUn !== nombreDeux){
+    alert("nombreUn n'est pas égal à nombreDeux");
+}
+
+for (let i = 0; i <= 9; i++){
+    console.log(i);
+}
+
+let fruits = ["pomme", "banane", "poire"];
+
+for (let i = 0; i < fruits.length; i++){
+    console.log(i);
+}
+
+let i = 0;
+while (i < 10){
+    console.log(i)
+    i++
+}
+
+i = 0;
+while (i < 10){
+    console.log(i);
+    i += 2;
+}
+
+for (let i = 0; i <= 10; i++){
+    if ( i === 5){
+        alert("HOLLAAAA, i est bien égal à " + i);
+    }
+}
